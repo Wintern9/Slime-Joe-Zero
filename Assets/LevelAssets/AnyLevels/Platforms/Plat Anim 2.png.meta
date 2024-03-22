@@ -1,0 +1,520 @@
+fileFormatVersion: 2
+guid: 1bba470da33574a43a553318619483e2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1595832154554655147
+    second: Plat Anim 2_0
+  - first:
+      213: 6096971054089120162
+    second: Plat Anim 2_1
+  - first:
+      213: -8374089469287598389
+    second: Plat Anim 2_2
+  - first:
+      213: 7093929489902164284
+    second: Plat Anim 2_3
+  - first:
+      213: 7194977511114979363
+    second: Plat Anim 2_4
+  - first:
+      213: 5925582940737287390
+    second: Plat Anim 2_5
+  - first:
+      213: -1986144141521375727
+    second: Plat Anim 2_6
+  - first:
+      213: 7696506024133402721
+    second: Plat Anim 2_7
+  - first:
+      213: 221982287664227237
+    second: Plat Anim 2_8
+  - first:
+      213: -3422129396122823507
+    second: Plat Anim 2_9
+  - first:
+      213: -5996317374403409927
+    second: Plat Anim 2_10
+  - first:
+      213: 2418511853778788267
+    second: Plat Anim 2_11
+  - first:
+      213: -3826127764603745600
+    second: Plat Anim 2_12
+  - first:
+      213: 2086368171597227628
+    second: Plat Anim 2_13
+  - first:
+      213: -2370397373094490974
+    second: Plat Anim 2_14
+  - first:
+      213: -7483168970639565836
+    second: Plat Anim 2_15
+  - first:
+      213: 3280186223388321785
+    second: Plat Anim 2_16
+  - first:
+      213: 5356740185642096694
+    second: Plat Anim 2_17
+  - first:
+      213: 2764028744277828044
+    second: Plat Anim 2_18
+  - first:
+      213: 5687583853152905561
+    second: Plat Anim 2_19
+  - first:
+      213: -1602678989862490589
+    second: Plat Anim 2_20
+  - first:
+      213: -8422388674570981689
+    second: Plat Anim 2_21
+  - first:
+      213: -659800871646076007
+    second: Plat Anim 2_22
+  - first:
+      213: 3174330091285684451
+    second: Plat Anim 2_23
+  - first:
+      213: -3965712496898517170
+    second: Plat Anim 2_24
+  - first:
+      213: 3952872730007500881
+    second: Plat Anim 2_25
+  - first:
+      213: -8329875366890894770
+    second: Plat Anim 2_26
+  - first:
+      213: -4399154513615996445
+    second: Plat Anim 2_27
+  - first:
+      213: -5807588028687426418
+    second: Plat Anim 2_28
+  - first:
+      213: -796118500243365098
+    second: Plat Anim 2_29
+  - first:
+      213: -3367598978814394391
+    second: Plat Anim 2_30
+  - first:
+      213: 2503710068551639168
+    second: Plat Anim 2_31
+  - first:
+      213: 5160828767200821134
+    second: Plat Anim 2_32
+  - first:
+      213: 1089351524291959928
+    second: Plat Anim 2_33
+  - first:
+      213: 7352964327158057611
+    second: Plat Anim 2_34
+  - first:
+      213: 4954490517866641392
+    second: Plat Anim 2_35
+  - first:
+      213: -8549208401602400299
+    second: Plat Anim 2_36
+  - first:
+      213: 601876351162544605
+    second: Plat Anim 2_37
+  - first:
+      213: -1550907442613565734
+    second: Plat Anim 2_38
+  - first:
+      213: -7840698164106368942
+    second: Plat Anim 2_39
+  - first:
+      213: 2438387874629817341
+    second: Plat Anim 2_40
+  - first:
+      213: 6776317231901795847
+    second: Plat Anim 2_41
+  - first:
+      213: 6190644878770042667
+    second: Plat Anim 2_42
+  - first:
+      213: -8053263805421658668
+    second: Plat Anim 2_43
+  - first:
+      213: 2735566369208940156
+    second: Plat Anim 2_44
+  - first:
+      213: 8198685929798968874
+    second: Plat Anim 2_45
+  - first:
+      213: -8417099197763291185
+    second: Plat Anim 2_46
+  - first:
+      213: 7129815252641088700
+    second: Plat Anim 2_47
+  - first:
+      213: -4120884756603572093
+    second: Plat Anim 2_48
+  - first:
+      213: -4595391525085354806
+    second: Plat Anim 2_49
+  - first:
+      213: 3504695624159267980
+    second: Plat Anim 2_50
+  - first:
+      213: -1424244170677364589
+    second: Plat Anim 2_51
+  - first:
+      213: 975459803601112084
+    second: Plat Anim 2_52
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 300
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Plat Anim 2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 616
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba16065b3e8852610800000000000000
+      internalID: 1595832154554655147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plat Anim 2_1
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 0
+        width: 617
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a922dcdedacc9450800000000000000
+      internalID: 6096971054089120162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plat Anim 2_2
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 0
+        width: 617
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc6f5c9def149cb80800000000000000
+      internalID: -8374089469287598389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plat Anim 2_3
+      rect:
+        serializedVersion: 2
+        x: 1887
+        y: 0
+        width: 617
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c39594b2943b27260800000000000000
+      internalID: 7093929489902164284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plat Anim 2_5
+      rect:
+        serializedVersion: 2
+        x: 2517
+        y: 0
+        width: 618
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed4b2cd1a46eb3250800000000000000
+      internalID: 5925582940737287390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plat Anim 2_7
+      rect:
+        serializedVersion: 2
+        x: 3146
+        y: 0
+        width: 617
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 160202c737b7fca60800000000000000
+      internalID: 7696506024133402721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plat Anim 2_8
+      rect:
+        serializedVersion: 2
+        x: 3771
+        y: 0
+        width: 617
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a3a7aae6b3a41300800000000000000
+      internalID: 221982287664227237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plat Anim 2_10
+      rect:
+        serializedVersion: 2
+        x: 4404
+        y: 0
+        width: 616
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f78e2a2e1dc8cca0800000000000000
+      internalID: -5996317374403409927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 9adde48773e064c4b890809b3be9a537
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Plat Anim 2_0: 1595832154554655147
+      Plat Anim 2_1: 6096971054089120162
+      Plat Anim 2_10: -5996317374403409927
+      Plat Anim 2_11: 2418511853778788267
+      Plat Anim 2_12: -3826127764603745600
+      Plat Anim 2_13: 2086368171597227628
+      Plat Anim 2_14: -2370397373094490974
+      Plat Anim 2_15: -7483168970639565836
+      Plat Anim 2_16: 3280186223388321785
+      Plat Anim 2_17: 5356740185642096694
+      Plat Anim 2_18: 2764028744277828044
+      Plat Anim 2_19: 5687583853152905561
+      Plat Anim 2_2: -8374089469287598389
+      Plat Anim 2_20: -1602678989862490589
+      Plat Anim 2_21: -8422388674570981689
+      Plat Anim 2_22: -659800871646076007
+      Plat Anim 2_23: 3174330091285684451
+      Plat Anim 2_24: -3965712496898517170
+      Plat Anim 2_25: 3952872730007500881
+      Plat Anim 2_26: -8329875366890894770
+      Plat Anim 2_27: -4399154513615996445
+      Plat Anim 2_28: -5807588028687426418
+      Plat Anim 2_29: -796118500243365098
+      Plat Anim 2_3: 7093929489902164284
+      Plat Anim 2_30: -3367598978814394391
+      Plat Anim 2_31: 2503710068551639168
+      Plat Anim 2_32: 5160828767200821134
+      Plat Anim 2_33: 1089351524291959928
+      Plat Anim 2_34: 7352964327158057611
+      Plat Anim 2_35: 4954490517866641392
+      Plat Anim 2_36: -8549208401602400299
+      Plat Anim 2_37: 601876351162544605
+      Plat Anim 2_38: -1550907442613565734
+      Plat Anim 2_39: -7840698164106368942
+      Plat Anim 2_4: 7194977511114979363
+      Plat Anim 2_40: 2438387874629817341
+      Plat Anim 2_41: 6776317231901795847
+      Plat Anim 2_42: 6190644878770042667
+      Plat Anim 2_43: -8053263805421658668
+      Plat Anim 2_44: 2735566369208940156
+      Plat Anim 2_45: 8198685929798968874
+      Plat Anim 2_46: -8417099197763291185
+      Plat Anim 2_47: 7129815252641088700
+      Plat Anim 2_48: -4120884756603572093
+      Plat Anim 2_49: -4595391525085354806
+      Plat Anim 2_5: 5925582940737287390
+      Plat Anim 2_50: 3504695624159267980
+      Plat Anim 2_51: -1424244170677364589
+      Plat Anim 2_52: 975459803601112084
+      Plat Anim 2_6: -1986144141521375727
+      Plat Anim 2_7: 7696506024133402721
+      Plat Anim 2_8: 221982287664227237
+      Plat Anim 2_9: -3422129396122823507
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
