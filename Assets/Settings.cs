@@ -30,6 +30,7 @@ public class Settings : MonoBehaviour
     static public int ScinNumEquipped = 0;
 
     static private int CoinValue = 0;
+    static public bool JumpControlSwitch = true;
 
     static private List<int> SkinOpens = new List<int> {0};
 

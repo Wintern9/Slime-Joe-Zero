@@ -60,7 +60,14 @@ public class TouchInput : MonoBehaviour
             // Проверяем, было ли начало касания
             if (touch.phase == TouchPhase.Began)
             {
-                pos = touch.position;
+                if (Settings.JumpControlSwitch)
+                {
+                    pos = touch.position;
+                }
+                else
+                {
+                    pos = gameObject.transform.position;
+                }
                 animator.SetBool("Jumping", false);
                 animator.SetBool("Jump", true);
                 text1.text = "Pos:" + pos;

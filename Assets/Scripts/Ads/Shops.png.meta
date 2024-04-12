@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 319f4e207eb904944b5840df264002e0
+guid: 27b06b8cefac7634899de98ea8466aef
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3468650400314898853
-    second: background part1_0
+      213: 4437441250163220866
+    second: Shops_0
+  - first:
+      213: 107365114465070348
+    second: Shops_1
+  - first:
+      213: -7836293442648079337
+    second: Shops_2
+  - first:
+      213: 9115084050798415697
+    second: Shops_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 300
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +84,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -126,13 +135,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: background part1_0
+      name: Shops_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 10584
-        height: 6056
+        width: 7118
+        height: 4425
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +149,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5a939c0592f132030800000000000000
-      internalID: 3468650400314898853
+      spriteID: 281e4a37e45f49d30800000000000000
+      internalID: 4437441250163220866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shops_1
+      rect:
+        serializedVersion: 2
+        x: 7408
+        y: 1908
+        width: 792
+        height: 917
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0da5f4b0007d7100800000000000000
+      internalID: 107365114465070348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shops_2
+      rect:
+        serializedVersion: 2
+        x: 7408
+        y: 1642
+        width: 792
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7140d33e1a4ef3390800000000000000
+      internalID: -7836293442648079337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shops_3
+      rect:
+        serializedVersion: 2
+        x: 7408
+        y: 1339
+        width: 792
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15f0ba186a84f7e70800000000000000
+      internalID: 9115084050798415697
       vertices: []
       indices: 
       edges: []
@@ -157,7 +229,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      background part1_0: 3468650400314898853
+      Shops_0: 4437441250163220866
+      Shops_1: 107365114465070348
+      Shops_2: -7836293442648079337
+      Shops_3: 9115084050798415697
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

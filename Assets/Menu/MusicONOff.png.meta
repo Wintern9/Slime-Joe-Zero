@@ -228,7 +228,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MusicONOff_0: 2617882641283363918
+      MusicONOff_1: 5490228359873417780
+      MusicONOff_2: -4922399112120174970
+      MusicONOff_3: -3639883765579528699
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
