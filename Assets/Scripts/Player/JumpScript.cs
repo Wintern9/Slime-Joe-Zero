@@ -134,6 +134,8 @@ public class TouchInput : MonoBehaviour
             }
         }
 
+        ///--------------///
+
         if (rotate && Mathf.Floor(transform.rotation.eulerAngles.z) == 0f)
         {
             rb.freezeRotation = true;
@@ -145,6 +147,7 @@ public class TouchInput : MonoBehaviour
 
         if (!ground && Mathf.Floor(transform.rotation.eulerAngles.z) != 0f)
         {
+            rotate = true;
             // Задаем конечный угол (0 градусов)
             float targetRotation = 0.0f;
 
