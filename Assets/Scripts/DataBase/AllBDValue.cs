@@ -10,6 +10,12 @@ public class LevelInfo
     public bool MoneyTake { get; set; }
 }
 
+public class LevelInfoBD
+{
+    public int MoneyNum { get; set; }
+    public int MoneyTake { get; set; }
+}
+
 public class Level
 {
     public LevelInfo[] levelInfos { get; set; }

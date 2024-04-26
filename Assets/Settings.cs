@@ -12,12 +12,9 @@ public class Settings : MonoBehaviour
     static public bool EyesBool = true;
     static public bool rotate = false;
     //Active//
-    static public bool MusicBool = true;
-    static public bool SoundBool = true;
-    static public int LanguageWork = 0;
-
-    //static public int LevelCount = 1;
-    //static public int LevelComplete = 0;
+    static public bool MusicBool = true; //БД
+    static public bool SoundBool = true; //БД
+    static public int LanguageWork = 0; //БД
 
     static public float SpeedCloud = 0.0001f;
     static public float parallaxEffectMultiplier = 0.7f;
@@ -29,33 +26,14 @@ public class Settings : MonoBehaviour
     static public int ScinNum = 0;
     static public int ScinNumEquipped = 0;
 
-    static private int CoinValue = 0;
+    static private int CoinValue = 0; //БД
     static public bool JumpControlSwitch = true;
 
-    static private List<int> SkinOpens = new List<int> {0};
+    static private List<int> SkinOpens = new List<int> { 0 }; //БД
 
-    static private List<string> LevelCompites = new List<string>();
+    static private List<string> LevelCompites = new List<string>(); //БД
 
-    static private List<Level> Level = new List<Level>()
-    { 
-        new Level // Уровень 1
-        { 
-            levelInfos = new LevelInfo[] 
-            { 
-                new LevelInfo // Монета 1
-                { 
-                    MoneyNum = 0, MoneyTake = false 
-                } 
-                // Добавлять сюда монеты
-            }
-        }, 
-        new Level{levelInfos = new LevelInfo[]{new LevelInfo{MoneyNum = 0, MoneyTake = false }}}, 
-        new Level{levelInfos = new LevelInfo[]{new LevelInfo{MoneyNum = 0, MoneyTake = false } } },  // Уровень 3
-        new Level{levelInfos = new LevelInfo[]{new LevelInfo{MoneyNum = 0, MoneyTake = false } } },  // Уровень 4
-        new Level{levelInfos = new LevelInfo[]{new LevelInfo{MoneyNum = 0, MoneyTake = false }, new LevelInfo { MoneyNum = 1, MoneyTake = false } ,new LevelInfo{MoneyNum = 2, MoneyTake = false } } },  // Уровень 5
-        new Level{levelInfos = new LevelInfo[]{new LevelInfo{MoneyNum = 0, MoneyTake = false } } },  // Уровень 6
-        
-    };
+    static private List<Level> Level = new List<Level>(); //БД
 
 
     public void ChangeMusicBool()
@@ -69,7 +47,7 @@ public class Settings : MonoBehaviour
         SoundBool = !SoundBool;
         Debug.Log(SoundBool);
     }
-    
+
     public void ChangeLanguage(int lan)
     {
         LanguageWork = lan;
@@ -120,7 +98,12 @@ public class Settings : MonoBehaviour
 
     public void LevelComSet(string LevelName)
     {
-        if(!LevelCompites.Contains(LevelName))
+        if (!LevelCompites.Contains(LevelName))
             LevelCompites.Add(LevelName);
+    }
+
+    public void SetValueToLevel(List<Level> LevelExtract)
+    {
+        Level = LevelExtract;
     }
 }

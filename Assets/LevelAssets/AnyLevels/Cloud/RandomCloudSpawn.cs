@@ -19,16 +19,12 @@ public class SpawnRandomly : MonoBehaviour
     {
         while (true)
         {
-            // Генерируем случайные координаты внутри коллайдера
             Vector3 randomPosition = GetRandomPositionInsideCollider(spawnArea);
 
-            // Создаем объект в случайной позиции
             GameObject newObject = Instantiate(objectToSpawn[Random.Range(0, objectToSpawn.Length-1)], randomPosition, Quaternion.identity);
 
-            // Делаем новый объект дочерним к текущему объекту
             newObject.transform.parent = transform;
 
-            // Ждем заданный интервал времени перед созданием следующего объекта
             yield return new WaitForSeconds(spawnInterval);
         }
     }

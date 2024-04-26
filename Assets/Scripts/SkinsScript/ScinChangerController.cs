@@ -7,8 +7,6 @@ public class ScinChanger : MonoBehaviour
 {
     [SerializeField] private List<Sprite> ScinsMass;
 
-
-
     private void Start()
     {
         DontDestroyOnLoad(gameObject);
