@@ -66,6 +66,7 @@ public class Settings : MonoBehaviour
     public void CoinSet(int coin)
     {
         CoinValue += coin;
+        new ExtractDataBase().CoinSave(CoinValue);
     }
 
     public List<int> SkinOpensGet()
@@ -89,6 +90,7 @@ public class Settings : MonoBehaviour
     public void LevelInfoSet(int LevelNum, int MoneyNum, bool Take)
     {
         Level[LevelNum].levelInfos[MoneyNum].MoneyTake = Take;
+        new ExtractDataBase().LevelInfoUpdate(Level);
     }
 
     public int LevelComNumGet()

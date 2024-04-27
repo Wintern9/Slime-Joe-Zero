@@ -15,25 +15,32 @@ public class ExtractDataBase : MonoBehaviour
 
     private void Awake()
     {
-        string dbPath = Application.persistentDataPath + "/mydatabase.db";
+        dbPath = Application.persistentDataPath + "/mydatabase.db";
         if (!File.Exists(dbPath))
         {          
             connection = new SQLiteConnection(dbPath, SQLiteOpenFlags.ReadWrite | SQLiteOpenFlags.Create);
             FirstEntryGame();
         }else{connection = new SQLiteConnection(dbPath, SQLiteOpenFlags.ReadWrite);}
-        FirstEntryGame();
         settings = new Settings();
+        StartLoading();
     }
-    void Start()
+    void StartLoading()
     {
         settings.SetValueToLevel(CreateLevelList());
+        settings.CoinSet(connection.Table<PlayerInfo>().ToList()[0].Coin);
     }
 
     void FirstEntryGame()
     {
         connection.CreateTable<LevelInfoBD>();
+        connection.CreateTable<PlayerInfo>();
+        connection.CreateTable<ScinColection>();
+        connection.CreateTable<LevelComplite>();
+
         foreach (LevelInfoBD levelInfoBD in ParseListLevelInfo())
             connection.Insert(levelInfoBD);
+
+        connection.Insert(new PlayerInfo() {Coin = 0});
     }
 
     List<LevelInfoBD> ParseListLevelInfo()
@@ -55,15 +62,42 @@ public class ExtractDataBase : MonoBehaviour
 
     private List<Level> CreateLevelList()
     {
-        List<Level> level = new Level();
         List<LevelInfoBD> levelInfo = connection.Table<LevelInfoBD>().ToList();
-        foreach(var levelInfoBD in levelInfo)
+
+        try
         {
-            level.Add()
+            int b = 0;
+            for (int i = 0; i < levels.Count; i++)
+            {
+                for (int j = 0; j < levels[i].levelInfos.Length; j++)
+                {
+                    levels[i].levelInfos[j].MoneyTake = levelInfo[b].MoneyTake > 0;
+                    b++;
+                }
+            }
+        } catch(Exception ex) {
+            throw new Exception("Ошибка обработки LevelInfo: " + ex.Message);
         }
 
+        return levels;
+    }
 
-        return connection.Table<LevelInfoBD>().ToList();
+    public void CoinSave(int Coin)
+    {
+        try
+        {
+            connection.Update(new PlayerInfo() { Coin = Coin });
+        } catch
+        {
+            connection.CreateTable<PlayerInfo>();
+            connection.Insert(new PlayerInfo() { Coin = Coin });
+        }
+    }
+
+    public void LevelInfoUpdate(List<Level> level)
+    {
+        levels = level;
+        connection.Update(ParseListLevelInfo());
     }
 
     List<Level> levels = new List<Level>{
@@ -82,7 +116,6 @@ public class ExtractDataBase : MonoBehaviour
         new Level { levelInfos = new LevelInfo[] { new LevelInfo { MoneyNum = 0, MoneyTake = false } } },  // Уровень 3
         new Level { levelInfos = new LevelInfo[] { new LevelInfo { MoneyNum = 0, MoneyTake = false } } },  // Уровень 4
         new Level { levelInfos = new LevelInfo[] { new LevelInfo { MoneyNum = 0, MoneyTake = false }, new LevelInfo { MoneyNum = 1, MoneyTake = false }, new LevelInfo { MoneyNum = 2, MoneyTake = false } } },  // Уровень 5
-        new Level { levelInfos = new LevelInfo[] { new LevelInfo { MoneyNum = 0, MoneyTake = false } } },  // Уровень 6
-        
+        new Level { levelInfos = new LevelInfo[] { new LevelInfo { MoneyNum = 0, MoneyTake = false } } },  // Уровень 6      
     };
 }

@@ -20,3 +20,18 @@ public class Level
 {
     public LevelInfo[] levelInfos { get; set; }
 }
+
+public class PlayerInfo
+{
+    public int Coin { get; set; }
+}
+
+public class ScinColection
+{
+    public int SkinOpens { get; set; }
+}
+
+public class LevelComplite
+{
+    public int LevelComplites { get; set; }
+}
