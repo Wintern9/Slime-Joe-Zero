@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ButtonController : MonoBehaviour
 {
-    void Awake()
+    void Start()
     {
         Button[] childButtons = GetComponentsInChildren<Button>();
         Settings settings = new Settings();

@@ -79,7 +79,8 @@ public class Settings : MonoBehaviour
         if (!SkinOpens.Contains(SkinAdd))
         {
             SkinOpens.Add(SkinAdd);
-        }
+            new ExtractDataBase().SkinSave(SkinOpens);
+        }      
     }
 
     public bool LevelInfoGet(int LevelNum, int MoneyNum)
@@ -89,6 +90,7 @@ public class Settings : MonoBehaviour
 
     public void LevelInfoSet(int LevelNum, int MoneyNum, bool Take)
     {
+        Debug.Log("Update");
         Level[LevelNum].levelInfos[MoneyNum].MoneyTake = Take;
         new ExtractDataBase().LevelInfoUpdate(Level);
     }
@@ -101,11 +103,42 @@ public class Settings : MonoBehaviour
     public void LevelComSet(string LevelName)
     {
         if (!LevelCompites.Contains(LevelName))
+        {
             LevelCompites.Add(LevelName);
+            new ExtractDataBase().LevelComSave(LevelCompites);
+        }
     }
 
     public void SetValueToLevel(List<Level> LevelExtract)
     {
         Level = LevelExtract;
+    }
+
+    public void SetValueToSkin(List<ScinColection> Skin)
+    {
+        List<int> skinCollection = new List<int>();
+
+        foreach (ScinColection sc in Skin)
+        {
+            skinCollection.Add(sc.SkinOpens);
+        }
+
+        SkinOpens = skinCollection;
+    }
+
+
+    public void SetValueToLevelComplites(List<LevelComplite> levels)
+    {
+        List<string> levelsComplite = new List<string>();
+
+        foreach (LevelComplite sc in levels)
+        {
+            levelsComplite.Add(sc.LevelComplites);
+        }
+        foreach (string sc in LevelCompites)
+        {
+            Debug.Log(sc);
+        }
+        LevelCompites = levelsComplite;
     }
 }

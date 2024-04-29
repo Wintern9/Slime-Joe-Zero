@@ -18,7 +18,7 @@ public class PlayerCreator : MonoBehaviour
     {
         try
         {
-            if (GameObject.FindGameObjectWithTag("Player") != null)
+            if (GameObject.FindGameObjectWithTag("Player") == null)
             {
                 GameObject gameObject = GameObject.FindGameObjectWithTag("CreatePlayer");
                 Instantiate(Player, gameObject.transform);

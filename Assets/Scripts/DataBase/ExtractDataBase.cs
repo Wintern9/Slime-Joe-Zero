@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using SQLite4Unity3d;
 using System.IO;
-using static UnityEngine.EventSystems.EventTrigger;
 using System.Linq;
 using System;
 
@@ -13,9 +12,11 @@ public class ExtractDataBase : MonoBehaviour
     string dbPath;
     SQLiteConnection connection;
 
+    string DBName = "/mydatabase.db";
+
     private void Awake()
     {
-        dbPath = Application.persistentDataPath + "/mydatabase.db";
+        dbPath = Application.persistentDataPath + DBName;
         if (!File.Exists(dbPath))
         {          
             connection = new SQLiteConnection(dbPath, SQLiteOpenFlags.ReadWrite | SQLiteOpenFlags.Create);
@@ -24,10 +25,13 @@ public class ExtractDataBase : MonoBehaviour
         settings = new Settings();
         StartLoading();
     }
+
     void StartLoading()
     {
         settings.SetValueToLevel(CreateLevelList());
         settings.CoinSet(connection.Table<PlayerInfo>().ToList()[0].Coin);
+        settings.SetValueToSkin(connection.Table<ScinColection>().ToList());
+        settings.SetValueToLevelComplites(connection.Table<LevelComplite>().ToList());
     }
 
     void FirstEntryGame()
@@ -72,6 +76,7 @@ public class ExtractDataBase : MonoBehaviour
                 for (int j = 0; j < levels[i].levelInfos.Length; j++)
                 {
                     levels[i].levelInfos[j].MoneyTake = levelInfo[b].MoneyTake > 0;
+                    Debug.Log(levels[i].levelInfos[j].MoneyTake);
                     b++;
                 }
             }
@@ -84,20 +89,40 @@ public class ExtractDataBase : MonoBehaviour
 
     public void CoinSave(int Coin)
     {
-        try
-        {
-            connection.Update(new PlayerInfo() { Coin = Coin });
-        } catch
-        {
-            connection.CreateTable<PlayerInfo>();
-            connection.Insert(new PlayerInfo() { Coin = Coin });
-        }
+        connection = new SQLiteConnection(Application.persistentDataPath + DBName, SQLiteOpenFlags.ReadWrite);
+        var coinUpdate = connection.Table<PlayerInfo>().FirstOrDefault();
+        coinUpdate.Coin = Coin;
+        connection.Update(coinUpdate);
     }
 
     public void LevelInfoUpdate(List<Level> level)
     {
         levels = level;
-        connection.Update(ParseListLevelInfo());
+
+        connection = new SQLiteConnection(Application.persistentDataPath + DBName, SQLiteOpenFlags.ReadWrite);
+        var levelUpdate = connection.Table<LevelInfoBD>().ToList();
+        var levelUpdate2 = ParseListLevelInfo();
+
+        for(int i = 0; i < levelUpdate.Count; i++)
+        {
+            levelUpdate[i].MoneyTake = levelUpdate2[i].MoneyTake;
+            levelUpdate[i].MoneyNum = levelUpdate2[i].MoneyNum;
+        }
+
+        connection.UpdateAll(levelUpdate);
+    }
+
+    public void SkinSave(List<int> skin)
+    {
+        connection = new SQLiteConnection(Application.persistentDataPath + DBName, SQLiteOpenFlags.ReadWrite);
+        var skinOpen = connection.Table<ScinColection>().ToList();
+        connection.Insert(new ScinColection() { SkinOpens = skin[skin.Count - 1] });
+    }
+
+    public void LevelComSave(List<string> levels)
+    {
+        connection = new SQLiteConnection(Application.persistentDataPath + DBName, SQLiteOpenFlags.ReadWrite);
+        connection.Insert(new LevelComplite() { LevelComplites = levels[levels.Count - 1] });
     }
 
     List<Level> levels = new List<Level>{
