@@ -66,7 +66,7 @@ public class TouchInput : MonoBehaviour
                 }
                 else
                 {
-                    pos = gameObject.transform.position;
+                    pos = new Vector2(Screen.width / 2, Screen.height / 2 * 0.8f);
                 }
                 animator.SetBool("Jumping", false);
                 animator.SetBool("Jump", true);

@@ -11,12 +11,13 @@ public class TextChanger : MonoBehaviour
     [SerializeField] private string Text2;
 
     [SerializeField] private string[] LanguageMassText;
-    [SerializeField] private int LanguageValue;
+    private int LanguageValue;
 
     [SerializeField] private int Music0OrSounds1OrLanguage2;
 
     void Start()
     {
+        LanguageValue = LanguageScript.language[0].localization.Length;
         if (Music0OrSounds1OrLanguage2 == 0)
         {
             if (Settings.MusicBool)
@@ -60,7 +61,8 @@ public class TextChanger : MonoBehaviour
     public void ChangeLaunguage()
     {
         numLan++;
-        if (numLan >= LanguageValue) numLan = 0;
+        if (numLan >= LanguageValue) { numLan = 0; }
+        Debug.Log(numLan);
         text.text = LanguageMassText[numLan];
         Settings settings = new Settings(); settings.ChangeLanguage(numLan);
     }

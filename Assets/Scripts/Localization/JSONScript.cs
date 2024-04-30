@@ -1,33 +1,26 @@
 using UnityEngine;
 using System.IO;
+using System.Runtime.InteropServices.ComTypes;
+using Newtonsoft.Json;
 
 public class JsonDataLoader : MonoBehaviour
 {
-    public string filePath = Application.persistentDataPath + "localization.json";
+    private string filePath;
 
     void Start()
     {
+        filePath = Application.persistentDataPath + "-localization.json";
+
         if (File.Exists(filePath))
         {
             string jsonData = File.ReadAllText(filePath);
 
-            MyDataObject[] dataObjects = JsonUtility.FromJson<MyDataObject[]>(jsonData);
-
-            foreach (MyDataObject dataObject in dataObjects)
-            {
-                Debug.Log("Name: " + dataObject.Name + ", Age: " + dataObject.Age);
-            }
+            LanguageScript.language = JsonConvert.DeserializeObject<Language[]>(jsonData);
         }
         else
         {
-            Debug.LogError("File not found: " + filePath);
+            string jsonData = JsonConvert.SerializeObject(LanguageScript.language, Formatting.Indented);
+            File.WriteAllText(filePath, jsonData);
         }
-    }
-
-    [System.Serializable]
-    public class MyDataObject
-    {
-        public string Name;
-        public int Age;
     }
 }

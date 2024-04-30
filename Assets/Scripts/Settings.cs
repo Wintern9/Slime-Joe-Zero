@@ -51,6 +51,7 @@ public class Settings : MonoBehaviour
     public void ChangeLanguage(int lan)
     {
         LanguageWork = lan;
+        LocalizationScript.TextChange = true;
     }
 
     public void Adaptive()
@@ -66,7 +67,7 @@ public class Settings : MonoBehaviour
     public void CoinSet(int coin)
     {
         CoinValue += coin;
-        new ExtractDataBase().CoinSave(CoinValue);
+        new ControllerDataBase().CoinSave(CoinValue);
     }
 
     public List<int> SkinOpensGet()
@@ -79,7 +80,7 @@ public class Settings : MonoBehaviour
         if (!SkinOpens.Contains(SkinAdd))
         {
             SkinOpens.Add(SkinAdd);
-            new ExtractDataBase().SkinSave(SkinOpens);
+            new ControllerDataBase().SkinSave(SkinOpens);
         }      
     }
 
@@ -92,7 +93,7 @@ public class Settings : MonoBehaviour
     {
         Debug.Log("Update");
         Level[LevelNum].levelInfos[MoneyNum].MoneyTake = Take;
-        new ExtractDataBase().LevelInfoUpdate(Level);
+        new ControllerDataBase().LevelInfoUpdate(Level);
     }
 
     public int LevelComNumGet()
@@ -105,7 +106,7 @@ public class Settings : MonoBehaviour
         if (!LevelCompites.Contains(LevelName))
         {
             LevelCompites.Add(LevelName);
-            new ExtractDataBase().LevelComSave(LevelCompites);
+            new ControllerDataBase().LevelComSave(LevelCompites);
         }
     }
 
@@ -116,7 +117,7 @@ public class Settings : MonoBehaviour
 
     public void SetValueToSkin(List<ScinColection> Skin)
     {
-        List<int> skinCollection = new List<int>();
+        List<int> skinCollection = new List<int>() {0};
 
         foreach (ScinColection sc in Skin)
         {

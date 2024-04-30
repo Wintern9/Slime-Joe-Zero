@@ -6,7 +6,7 @@ using System.IO;
 using System.Linq;
 using System;
 
-public class ExtractDataBase : MonoBehaviour
+public class ControllerDataBase : MonoBehaviour
 {
     Settings settings;
     string dbPath;
