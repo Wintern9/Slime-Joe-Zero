@@ -1,5 +1,0 @@
-E:/Unity/Slime Joe Zero/.utmp/RelWithDebInfo/3g6w4w2h/arm64-v8a/CMakeFiles/edit_cache.dir
-E:/Unity/Slime Joe Zero/.utmp/RelWithDebInfo/3g6w4w2h/arm64-v8a/CMakeFiles/rebuild_cache.dir
-E:/Unity/Slime Joe Zero/.utmp/RelWithDebInfo/3g6w4w2h/arm64-v8a/FramePacing/CMakeFiles/swappywrapper.dir
-E:/Unity/Slime Joe Zero/.utmp/RelWithDebInfo/3g6w4w2h/arm64-v8a/FramePacing/CMakeFiles/edit_cache.dir
-E:/Unity/Slime Joe Zero/.utmp/RelWithDebInfo/3g6w4w2h/arm64-v8a/FramePacing/CMakeFiles/rebuild_cache.dir
