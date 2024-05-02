@@ -5940,9 +5940,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d3b16000a4c1d649b932c2cd5896d39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _androidGameId: 5578117
-  _iOSGameId: 5578116
-  _testMode: 0
 --- !u!4 &469565816
 Transform:
   m_ObjectHideFlags: 0
@@ -5970,8 +5967,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fbb216b6c3826941bd34afdd0842ad2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _androidAdUnitId: Interstitial_Android
-  _iOsAdUnitId: Interstitial_iOS
 --- !u!114 &469565819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24377,9 +24372,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95baaf3511d8e9e4f8b3b77477cb7127, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showAdButton: {fileID: 1922144552}
-  _androidAdUnitId: Rewarded_Android
-  _iOSAdUnitId: Rewarded_iOS
 --- !u!4 &1569037972
 Transform:
   m_ObjectHideFlags: 0

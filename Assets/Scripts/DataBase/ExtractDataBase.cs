@@ -14,16 +14,23 @@ public class ControllerDataBase : MonoBehaviour
 
     string DBName = "/mydatabase.db";
 
+    static bool Start = true;
+
     private void Awake()
     {
-        dbPath = Application.persistentDataPath + DBName;
-        if (!File.Exists(dbPath))
-        {          
-            connection = new SQLiteConnection(dbPath, SQLiteOpenFlags.ReadWrite | SQLiteOpenFlags.Create);
-            FirstEntryGame();
-        }else{connection = new SQLiteConnection(dbPath, SQLiteOpenFlags.ReadWrite);}
-        settings = new Settings();
-        StartLoading();
+        if (Start)
+        {
+            dbPath = Application.persistentDataPath + DBName;
+            if (!File.Exists(dbPath))
+            {
+                connection = new SQLiteConnection(dbPath, SQLiteOpenFlags.ReadWrite | SQLiteOpenFlags.Create);
+                FirstEntryGame();
+            }
+            else { connection = new SQLiteConnection(dbPath, SQLiteOpenFlags.ReadWrite); }
+            settings = new Settings();
+            StartLoading();
+            Start = false;
+        }
     }
 
     void StartLoading()
